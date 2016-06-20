@@ -1,0 +1,36 @@
+body {
+	background-color: yellow;
+	font-size: 10px;
+}
+
+p {
+	background-color:rgba(0,255,0,0.3);
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;	
+}
+
+.destacado {
+	font-size: 30px;
+	color: rgba(0,0,0,1);
+}
+
+/* Esta es una Nota */
+#chico {
+	font-size: 2.5em;
+	color: gray;
+
+}
+
+section.section1 {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sasso_lungo_da_passo_pordoi.jpg/270px-Sasso_lungo_da_passo_pordoi.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -500px -300px;
+}
+
+.section2 {
+	font-size: 3em;
+	background: url("../images/fondo.jpg");
+
+

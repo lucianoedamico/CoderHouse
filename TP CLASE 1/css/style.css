@@ -1,0 +1,86 @@
+body {
+	
+}
+
+header {
+	background-image: url("http://placehold.it/900x500");
+	height: 650px;
+}
+
+nav {
+	margin: auto;
+	width: 100%;
+}
+
+nav ul {
+		list-style-type:none;
+		height: 70px;
+		display: inline-block;
+
+}
+
+nav ul li {
+		display: inline;
+		color: white;
+		text-transform: uppercase;
+		padding: 10px;
+		font-weight: bold;
+}
+
+nav ul li a {
+		text-decoration: none;
+		color: white;
+}
+
+.container {
+	margin: 0 auto;
+	width: 900px;
+}
+
+.containernav {
+	padding-left: 200px;
+	padding-right: 200px;
+	width: 935px;
+	border-bottom: 1px solid white;
+	overflow: auto;
+
+}
+
+.logo {
+	float: left;
+	border-right:1px solid white;
+	padding-right: 100px;	
+}
+
+.subcontainer {
+	float: right;	
+	text-transform: uppercase;
+}
+
+.central {
+	width: 250px;
+
+}
+.central h1 {
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+
+}
+.central h3	 {
+		color: white;
+
+}
+
+
+.lishortcodes  {
+		padding-right: 50px;
+}
+
+.lishop  {
+
+		border-left: 1px solid white; 
+		padding-left: 25px;
+}
+

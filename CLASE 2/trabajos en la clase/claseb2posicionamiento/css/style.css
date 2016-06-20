@@ -1,0 +1,110 @@
+.cuadrado1{
+	height: 100px;
+	width: 100px;
+	background: red;
+	padding: 10px 20px;
+	margin: 30px 10px;
+	border: 5px orange solid;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.cuadrado2{
+	height: 100px;
+	width: 100px;
+	background: blue;
+	display: inline-block;
+}
+
+.circulo {
+	height: 100px;
+	width: 100px;
+	background: black;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.azul {
+	background: blue;
+}
+
+.verde {
+	background: green;
+}
+
+.roja {
+	background: red;
+}
+
+/* POSICIONAMIENTO*/
+
+.caja1 {
+	background: yellow;
+}
+
+.caja2 {
+	background: orange;
+}
+
+.caja3 {
+	background: cyan;
+}
+
+.caja4 {
+	background: magenta;
+}
+
+/* FLOAT  */
+.caja5 {
+	background: violet;
+	overflow: auto;
+}
+
+.hijo {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: black;
+}
+
+/* RELATIVE  */
+article.caja2 .hijo3{
+	background: green;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+/* RELATIVE  */
+article.caja3 .hijo3{
+	background: blue;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+/* FIXED  */
+article.caja4 .hijo5{
+	background: red;
+	position: fixed;
+	top: 9px;
+	left: 9px;
+}
+
+.hijob {
+	width: 100px;
+	height: 100px;
+	background: black;
+	color:white;
+	float:left;
+}
+
+
+
+
+
+
+
+
+
+
