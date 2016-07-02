@@ -1,0 +1,61 @@
+@import "vars";
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.circulo{
+	height: $tamanio;
+	width: $tamanio;
+	background: blue;
+	box-sizing: border-box;
+	display: inline-block;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 0px solid #000000;
+}
+
+.circulo1{
+	@extend .circulo;
+	background: $color-rojo;
+	position: relative;
+}
+
+.circulo2{
+	@extend .circulo;
+	background: $color-blanco;
+	position: absolute;
+	height: $tamanio/1.2;
+	width: $tamanio/1.2;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
+
+.circulo3{
+	@extend .circulo1;
+	position: absolute;
+	height: $tamanio/1.5;
+	width: $tamanio/1.5;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
+
+.circulo4{
+	@extend .circulo;
+	background: $color-azul;
+	position: absolute;
+	height: $tamanio/2;
+	width: $tamanio/2;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
+
+.estrella{
+	color:$color-blanco;
+	position: absolute;
+	font-size: 382px;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}

@@ -1,0 +1,51 @@
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.circulo, .circulo1, .circulo3, .circulo2, .circulo4 {
+  height: 700px;
+  width: 700px;
+  background: blue;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 0px solid #000000; }
+
+.circulo1, .circulo3 {
+  background: #ff1b1b;
+  position: relative; }
+
+.circulo2 {
+  background: white;
+  position: absolute;
+  height: 583.33333px;
+  width: 583.33333px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%; }
+
+.circulo3 {
+  position: absolute;
+  height: 466.66667px;
+  width: 466.66667px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%; }
+
+.circulo4 {
+  background: #0d2693;
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%; }
+
+.estrella {
+  color: white;
+  position: absolute;
+  font-size: 382px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,246 @@
+@import "reset";
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import "vars";
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+@mixin animacion($tiempo){
+	-webkit-transition:$tiempo;
+	-ms-transition:$tiempo;
+	-moz-transition:$tiempo;
+	-o-transition:$tiempo;
+	transition:$tiempo;
+}
+
+@mixin redondear($radio){
+	-ms-border-radius:$radio;
+	-webkit-border-radius:$radio;
+	-o-border-radius:$radio;
+	-moz-border-radius:$radio;
+	border-radius:$radio;
+}
+
+.test{
+	a{
+		color: white;
+		text-decoration: none;
+		background: $color-boton;
+		padding: 10px 30px;
+		@include redondear(4px);
+		@include animacion(2s);
+		&:hover{
+			background: $color-boton-hover;
+		}
+	}
+}
+
+#productos {
+	max-width: 900px;
+	margin: auto;
+
+	article{
+			
+		header{
+			padding:30px 10px;
+			background: blue;
+		
+			h3{
+				color: white;
+				text-transform: uppercase;
+
+				&:after{
+					content: "after";
+				}
+			}		
+		}		
+		p{
+			font-size: 14px;
+			line-height: 22px;
+			font-family:$fuente-texto;
+			text-align: center;
+		}	
+		a{
+			color: white;
+			text-decoration: none;
+			background: green;
+			&hover{
+				background: red;
+			}
+		}
+	}	
+}	
+
+#menu-principal {
+	background: black;
+	padding: 10px;
+
+	ul{
+		li{
+			display: inline-block;
+			margin: 0 10px;
+			&.destacado{
+				background: yellow;
+			}
+
+			a{
+				text-decoration: none;
+				color: pink;
+				&:hover{
+					color: violet;
+				}
+			}
+		}
+	}
+}
+.sectionHeader{
+	background-color: grey;
+}
+.sectionHeader__tituloh1 {
+	color: magenta;
+}
+.sectionheader__tituloh1--proyectobem {
+	color: orange;
+}
+
+header {
+	background: $color-primario;
+	padding: 100px 0;
+
+	h1{
+		font-family: $fuente-titulos;
+		color: white;
+		text-transform: uppercase;
+		
+		strong{
+			color: $color-secundario;
+		}
+		@media screen and (max-width: 500px) {
+			color: blue;
+		}
+
+	}
+
+	h3{
+		font-family: Arial, Helvetica, sans-serif;
+		color: #000;
+	}
+
+	a{
+		text-decoration: none;
+		background: white;
+		color: red;
+		border-radius: 5px;
+		padding: 10px 30px;
+		margin-top: 20px;
+		&:hover {
+			background: yellow;
+		}
+	}
+}
+
+.boton{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+
+.principal{
+	@extend .boton;
+	background: red;
+}
+
+.destacado2 {
+	@extend .boton;
+	background: green;
+	color: yellow;
+}
+
+.grande{
+	@extend .destacado2;
+	padding: 20px 50px;
+}
+
+.raro{
+	@extend .boton;
+	-webkit-border-radius: 2px 10px 40px 0px;
+	-ms-border-radius: 2px 10px 40px 0px;
+	-o-border-radius: 2px 10px 40px 0px;
+	-moz-border-radius: 2px 10px 40px 0px;
+	border-radius: 2px 10px 40px 0px;
+}
+
+.chico{
+	@extend .boton;
+	padding: 0;
+}
+@media screen and (max-width: 500px) {
+	#productos{
+		article{
+			header{
+				h2{
+				color: blue;
+				}	
+			}
+		}
+	}
+}
+
+$base: blue;
+$medium: silver;
+$premium: gold;
+
+$base_dark:darken($base,20%);
+$medium_dark:darken($medium,20%);
+$premium_dark:darken($premium,20%);
+
+@mixin crear_cajita($color,$color-oscuro){
+display: inline-block;
+		padding: 20px;
+		box-sizing: border-box;
+		width: 32%;
+		.contenido{
+			border:1px solid $color-oscuro;
+			.titulo{
+				background: $color;
+				border-bottom: 3px solid $color-oscuro;
+				padding: 20px 10px;
+				h3{
+					font-family: $fuente-titulos;
+					font-size: 30px;
+					color: white;
+
+				}
+			}
+
+			p{
+				padding: 10px;
+			}
+
+			.comprar{
+				border:1px solid $color;
+				padding: 5px 10px;
+				@include redondear(4px);
+				display: inline-block;
+				color: $color;
+				text-decoration: none;
+				margin:0 0 10px 10px;
+			}
+		}
+}
+
+.planes{
+	article{
+		&.base{
+			@include crear_cajita($base, $base_dark);
+		}
+		&.medium{
+			@include crear_cajita($medium, $medium_dark);
+		}
+		&.premium{
+			@include crear_cajita($premium, $premium_dark);
+		}
+	}
+}
+

@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.test a {
+  color: white;
+  text-decoration: none;
+  background: #624596;
+  padding: 10px 30px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: 2s;
+  -ms-transition: 2s;
+  -moz-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s; }
+  .test a:hover {
+    background: #342550; }
+
+#productos {
+  max-width: 900px;
+  margin: auto; }
+  #productos article header {
+    padding: 30px 10px;
+    background: blue; }
+    #productos article header h3 {
+      color: white;
+      text-transform: uppercase; }
+      #productos article header h3:after {
+        content: "after"; }
+  #productos article p {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Verdana, tahoma, sans-serif;
+    text-align: center; }
+  #productos article a {
+    color: white;
+    text-decoration: none;
+    background: green; }
+    #productos article ahover {
+      background: red; }
+
+#menu-principal {
+  background: black;
+  padding: 10px; }
+  #menu-principal ul li {
+    display: inline-block;
+    margin: 0 10px; }
+    #menu-principal ul li.destacado {
+      background: yellow; }
+    #menu-principal ul li a {
+      text-decoration: none;
+      color: pink; }
+      #menu-principal ul li a:hover {
+        color: violet; }
+
+.sectionHeader {
+  background-color: grey; }
+
+.sectionHeader__tituloh1 {
+  color: magenta; }
+
+.sectionheader__tituloh1--proyectobem {
+  color: orange; }
+
+header {
+  background: #ff0000;
+  padding: 100px 0; }
+  header h1 {
+    font-family: lobster, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase; }
+    header h1 strong {
+      color: blue; }
+    @media screen and (max-width: 500px) {
+      header h1 {
+        color: blue; } }
+  header h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000; }
+  header a {
+    text-decoration: none;
+    background: white;
+    color: red;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px; }
+    header a:hover {
+      background: yellow; }
+
+.boton, .principal, .destacado2, .grande, .raro, .chico {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 10px 20px; }
+
+.principal {
+  background: red; }
+
+.destacado2, .grande {
+  background: green;
+  color: yellow; }
+
+.grande {
+  padding: 20px 50px; }
+
+.raro {
+  -webkit-border-radius: 2px 10px 40px 0px;
+  -ms-border-radius: 2px 10px 40px 0px;
+  -o-border-radius: 2px 10px 40px 0px;
+  -moz-border-radius: 2px 10px 40px 0px;
+  border-radius: 2px 10px 40px 0px; }
+
+.chico {
+  padding: 0; }
+
+@media screen and (max-width: 500px) {
+  #productos article header h2 {
+    color: blue; } }
+.planes article.base {
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 32%; }
+  .planes article.base .contenido {
+    border: 1px solid #000099; }
+    .planes article.base .contenido .titulo {
+      background: blue;
+      border-bottom: 3px solid #000099;
+      padding: 20px 10px; }
+      .planes article.base .contenido .titulo h3 {
+        font-family: lobster, Helvetica, sans-serif;
+        font-size: 30px;
+        color: white; }
+    .planes article.base .contenido p {
+      padding: 10px; }
+    .planes article.base .contenido .comprar {
+      border: 1px solid blue;
+      padding: 5px 10px;
+      -ms-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -o-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      display: inline-block;
+      color: blue;
+      text-decoration: none;
+      margin: 0 0 10px 10px; }
+.planes article.medium {
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 32%; }
+  .planes article.medium .contenido {
+    border: 1px solid #8d8d8d; }
+    .planes article.medium .contenido .titulo {
+      background: silver;
+      border-bottom: 3px solid #8d8d8d;
+      padding: 20px 10px; }
+      .planes article.medium .contenido .titulo h3 {
+        font-family: lobster, Helvetica, sans-serif;
+        font-size: 30px;
+        color: white; }
+    .planes article.medium .contenido p {
+      padding: 10px; }
+    .planes article.medium .contenido .comprar {
+      border: 1px solid silver;
+      padding: 5px 10px;
+      -ms-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -o-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      display: inline-block;
+      color: silver;
+      text-decoration: none;
+      margin: 0 0 10px 10px; }
+.planes article.premium {
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 32%; }
+  .planes article.premium .contenido {
+    border: 1px solid #998100; }
+    .planes article.premium .contenido .titulo {
+      background: gold;
+      border-bottom: 3px solid #998100;
+      padding: 20px 10px; }
+      .planes article.premium .contenido .titulo h3 {
+        font-family: lobster, Helvetica, sans-serif;
+        font-size: 30px;
+        color: white; }
+    .planes article.premium .contenido p {
+      padding: 10px; }
+    .planes article.premium .contenido .comprar {
+      border: 1px solid gold;
+      padding: 5px 10px;
+      -ms-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -o-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      display: inline-block;
+      color: gold;
+      text-decoration: none;
+      margin: 0 0 10px 10px; }
+
+/*# sourceMappingURL=style.css.map */
