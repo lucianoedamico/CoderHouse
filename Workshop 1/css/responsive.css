@@ -1,0 +1,71 @@
+@media only screen and (min-width : 763px) and (max-width : 1023px) {
+/* Styles */
+	nav{
+		padding: 0 20px;
+	}
+
+	.portfolio ul li {
+    	max-width: 45%;
+    }
+
+    .divfooter {
+    	width: 33%;
+    }
+
+}
+
+@media only screen and (min-width : 560px) and (max-width : 762px) {
+/* Styles */
+	nav{
+		padding: 0 20px;
+	}
+
+	.portfolio ul li {
+    	max-width: 45%;
+    }
+
+    .divfooter {
+    	width: 100%;
+    	display: block;
+    	padding: 15px 0;
+    }
+
+}
+
+@media only screen and (max-width : 559px) {
+/* Styles */
+	nav{
+		padding: 0;
+	}
+
+	nav h2 {
+		padding: 20px 0;
+		float: none;
+		margin-left: 15px;
+	}
+
+	nav ul {
+    	float: none;
+   		padding: 22px 8px;
+  	    border-top: 2px solid gray;
+    }
+
+	h1 {
+		font-size: 28px;
+	}
+
+	.portfolio ul li {
+    	max-width: 90%;
+    }
+
+    .parrafo {
+    	width: 90%;
+    }
+
+    .divfooter {
+    	width: 100%;
+    	display: block;
+    	padding: 15px 0;
+    }
+
+}

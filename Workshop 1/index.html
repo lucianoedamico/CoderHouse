@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- Incluyo la librería de jquery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/stickyMojo.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {    
+
+    $('#sidebar').stickyMojo({footerID: '#footer', contentID: '#content'});
+
+    $('.ancla').click(function(){
+        var link = $(this);
+        var anchor  = link.attr('href');
+        $('html, body').stop().animate({
+            scrollTop: jQuery(anchor).offset().top
+        }, 1500);
+        return false;
+    });
+});
+</script>
+	<title>Workshop 1</title>
+</head>
+<body>
+
+	<nav>
+		<div class="container">
+			<h2>Nombre Apellido</h2>
+			<ul>
+				<li>
+					<a href="#portfolio" class="ancla">Portfolio</a>
+				</li>
+				<li>
+					<a href="#about" class="ancla">About</a>
+				</li>
+				<li>
+					<a href="#contact" class="ancla">Contact</a>
+				</li>
+			</ul>
+	</nav>	
+		
+	<header>
+		<div class="container">
+			<img src="img/me.png" alt="">
+			<h1>Nombre Apellido</h1>
+			<span class="starWhite"><h3 class="ion-android-star"></h3></span>
+			<p>Frontend Developer</p>
+		</div>
+	</header>
+
+	<section id="portfolio" class="portfolio">
+		<div class="container">
+			<h2>Portfolio</h2>
+			<span class="star"><h3 class="ion-android-star"></h3></span class="star">
+			<ul>
+				<li>
+					<article>
+						<div><span class="ion-search"></span></div>
+						<a href="#"><img src="img/1.png" alt=""></a>
+					</article>
+				</li>
+				<li>
+					<article>
+						<div><span class="ion-search"></span></div>
+						<a href="#"><img src="img/2.png" alt=""></a>
+					</article>
+				</li>
+				<li>
+					<article>
+						<div><span class="ion-search"></span></div>
+						<a href="#"><img src="img/3.png" alt=""></a>
+					</article>
+				</li>
+				<li>
+					<article>
+						<div><span class="ion-search"></span></div>
+						<a href="#"><img src="img/4.png" alt=""></a>
+					</article>
+				</li>
+				<li>
+					<article>
+						<div><span class="ion-search"></span></div>
+						<a href="#"><img src="img/5.png" alt=""></a>
+					</article>
+				</li>
+				<li>
+					<article>
+						<div><span class="ion-search"></span></div>
+						<a href="#"><img src="img/6.png" alt=""></a>
+					</article>
+				</li>
+				
+			</ul>
+		</div>	
+	</section>
+
+	<section id="about" class="about">
+		<div class="container">
+			<h2>About</h2>
+			<span class="starWhite"><h3 class="ion-android-star"></h3></span>
+			<ul>
+				<li class="parrafo">
+					<article>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur modi repellendus nesciunt, vero a libero accusamus suscipit, iusto incidunt consequatur ratione officiis eum illo, quasi expedita perferendis dolor. Commodi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur modi repellendus nesciunt, vero a libero accusamus suscipit, iusto incidunt consequatur ratione officiis eum illo, quasi expedita perferendis dolor. Commodi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur modi repellendus nesciunt, vero a libero accusamus suscipit, iusto incidunt consequatur ratione officiis eum illo, quasi expedita perferendis dolor. Commodi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur modi repellendus nesciunt, vero a libero accusamus suscipit, iusto incidunt consequatur ratione officiis eum illo, quasi expedita perferendis dolor. Commodi.
+						</p>
+					</article>
+				</li>
+				<li class="parrafo">
+					<article>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur modi repellendus nesciunt, vero a libero accusamus suscipit, iusto incidunt consequatur ratione officiis eum illo, quasi expedita perferendis dolor. Commodi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur modi repellendus nesciunt, vero a libero accusamus suscipit, iusto incidunt consequatur ratione officiis eum illo, quasi expedita perferendis dolor. Commodi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur modi repellendus nesciunt, vero a libero accusamus suscipit, iusto incidunt consequatur ratione officiis eum illo, quasi expedita perferendis dolor. Commodi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur modi repellendus nesciunt, vero a libero accusamus suscipit, iusto incidunt consequatur ratione officiis eum illo, quasi expedita perferendis dolor. Commodi.
+						</p>
+					</article>
+				</li>
+			</ul>
+		</div>	
+	</section>
+
+	<section id="contact" class="contact">
+		<div class="container">
+			<h2>Contact Me</h2>
+			<div>
+			<span class="star" class="black"><h3 class="ion-android-star"></h3></span class="star"></div>
+			<div class="contactoform">
+			<form action="contacto.php">
+				
+				<input type="text" placeholder="Name">
+				<br>
+				
+				<input type="email" placeholder="Email Address">
+				<br>
+				
+				<input type="number" placeholder="Phone Number">
+				<br>
+				
+				<textarea name="Message" id="" placeholder="Message"></textarea>
+				<br>
+				<br>
+				<div class="divsend">
+				<input class="send" type="submit" value="Send">
+				</div>
+			</form>
+			</div>
+		</div>	
+	</section>
+
+	<footer>
+		<div class="container">
+			<div>
+			<div class="divfooter">
+				<h4>Location</h4>
+				<p>3481 Melrose Place</p>
+				<p>Beverly Hills, CA90210</p>
+			</div>
+				<div class="divfooter">
+					<h4>Around the web</h4>
+					<ul>
+						<li>
+							<a href=""><span class="ion-social-facebook"></span></a>
+						</li>
+							<li>
+							<a href=""><span class="ion-social-googleplus"></span></a>
+						</li>
+							<li>
+							<a href=""><span class="ion-social-twitter"></span></a>
+						</li>
+							<li>
+							<a href=""><span class="ion-social-linkedin"></span></a>
+						</li>
+						<li>
+							<a href=""><span class="ion-social-dribbble"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<div class="footerone">
+				<div class="container">
+				<p>Copyright © Your Website 2014</p>
+				</div>
+			</div>
+		
+	</footer>
+	
+<script>
+  $(document).ready(function(){
+    $('#sidebar').stickyMojo({footerID: '#footer', contentID: '#container'});
+  });
+</script>
+</body>
+</html>
