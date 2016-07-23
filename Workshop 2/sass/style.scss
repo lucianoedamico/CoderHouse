@@ -1,0 +1,302 @@
+@import "reset";
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Karla|Source+Sans+Pro';
+
+
+$fuente-titulos:'Crimson Text', serif;
+$fuente-textos:'Source Sans Pro', sans-serif;
+$fuente-subtitulos:'Karla', sans-serif;
+
+body{
+	font-size:15px;
+}
+
+.contenedor{
+	max-width:95%;
+	margin:0 auto;
+	header{
+		border-bottom: 1px solid #C9BEBE;
+		
+		.header-principal{
+			.logocont{
+				padding:15px;
+				margin:0 auto;
+				max-width: 45%;
+				height: 45%;
+				h1{
+					p{
+						display: none;
+					}
+					img{
+						width:100%;
+						height:100%;
+					}
+
+				}
+			}
+		span{
+			display: none;
+		}
+			.header-list{
+			display: none;
+			}
+			input{
+				display: none;
+			}
+		}
+	
+	}
+	.nav-desktop{
+		display: none;
+	}
+
+	.nav-mobile{
+		text-align: center;
+		.nav-mobile-list{
+			padding-bottom:10px;
+
+			li{
+				display: inline-block;
+				padding:20px;
+				span{
+					font-size: 30px;
+				}
+			}
+		}
+
+
+	}
+
+	.imagenes{
+		.imagenes-wrapper{
+			margin-top:30px;
+			.estilos{
+				padding:13px;
+				position:relative;
+				text-align:left;
+
+				img{
+					width: 100%;
+				}
+				.imag-text{
+				padding-left:30px;
+				position:absolute;
+				top:30%;
+				left:6%;
+				color:white;
+					h2{
+						font-family: $fuente-titulos;
+						font-weight: 700;
+						font-size:1.6em;
+						padding:25px 0;
+
+						
+					}
+					h3{
+						font-family:$fuente-textos;	
+						text-transform: uppercase;
+						font-weight: 400;
+						letter-spacing: 2px;
+						font-size: 0.9em;
+					}
+				}
+
+				&.autumn{
+					.imag-text {
+						padding:15px;
+						position:static;
+						text-align: center;
+						color:black;
+						h2{
+							padding:10px;
+						}
+					}
+
+
+				}
+			}
+
+		}
+
+	}
+
+	.products{
+		padding: 20px;
+		h3{
+			color: gray;
+			font-family: $fuente-titulos;
+			text-align: center;
+			text-transform: uppercase;
+			padding: 20px 0;
+		}
+		.anteojos-list{
+			li{
+				list-style: none;
+				article{
+					text-align: center;
+					img{
+						width: 100%;
+					}
+					h4{
+						text-transform: uppercase;
+						color: blue;
+						font-family: $fuente-textos;
+					}
+					h5{
+						color: black;
+						padding: 13px 0;
+					}
+					p{
+						font-family: $fuente-textos;
+						color: gray;
+					}
+				}
+			}
+		}
+	}
+	.description{
+		padding: 20px;
+		.article-description{
+			h2{
+				padding-bottom: 25px;
+				font-size: 1.4em;
+			}
+			p{
+				color: gray;
+				font-family: $fuente-textos;
+				line-height: 20px;
+			}
+			div{
+				width:100%;
+				img{
+					width:100%;
+					height:100%;
+					padding: 20px;
+				}
+			}
+		}
+	}
+	.ofertas{
+		padding:20px;
+		.div-img{
+			position: relative;
+			img{
+				width: 100%;
+			}
+			.ofertas-text{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50% , -50%);
+				color: white;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: $fuente-titulos;
+				letter-spacing: 3px;
+				h3{
+
+				padding:55px 0;
+				font-size: 2.5em;
+				text-transform: none;
+				letter-spacing: none;
+				}
+			}
+		}
+	}
+	.news{
+		padding: 20px;
+		li{
+			list-style: none;
+		}
+		.notice{
+			text-align: left;
+			img{
+				padding: 20px 0;
+				width: 100%;
+			}
+			p{
+				font-family: $fuente-textos;
+				color: gray;	
+				line-height: 20px;
+			}
+			a{
+				color: blue;
+				text-decoration: none;
+				text-transform: uppercase;
+				padding: 20px 0;
+				font-family: $fuente-textos;
+				display: block;
+			}
+		}
+	}
+
+
+	.colections{
+		padding: 20px;
+		ul{
+			list-style: none;
+		}
+		h4{
+			color: gray;
+			font-family: $fuente-titulos;
+			text-align: center;
+			text-transform: uppercase;
+			padding: 20px 0;
+		}
+
+		.colection-article{
+			position: relative;
+			img{
+				width: 100%;
+				padding-top: 20px;
+			}
+			p{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50% , -50%);
+				color: white;
+				font-size: 22px;
+			}
+		}
+
+			.special{
+				background-color: #A09393;
+				padding: 80px 0;
+				position: static;
+				text-align: center;
+				color: white;
+				margin: 30px 0;
+				text-transform: uppercase;
+				line-height: 25px;
+
+					&.s2{
+						background-color: #AAA9B8;
+					
+					}
+
+					&.s3{
+						background-color: #D5BCBC;
+						padding-bottom: 30px;
+					}
+
+					h3{
+						font-family: $fuente-titulos;
+						font-size: 2em;
+						
+					}
+
+					p{
+						color: white;
+						font-size: 20px;
+						padding: 20px 0;
+						font-family: $fuente-titulos;
+					}
+			}
+
+			.line{
+				margin: 10px 0;
+			}
+
+	}
+}
