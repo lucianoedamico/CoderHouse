@@ -1,17 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Dosis|Montserrat:400,700|Muli|Open+Sans:400,700|Playfair+Display|Raleway|Roboto:400,700';
-
-/*
-
-font-family: 'Open Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Muli', sans-serif;
-font-family: 'Dosis', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-*/
-
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700';
 
 $color-header:#F5F5F5;
 /* ESTILOS BOOTSTRAP*/
@@ -19,6 +6,7 @@ $color-header:#F5F5F5;
 .navbar-inverse{
 	background: transparent;
 	border-style:none;
+    padding-bottom: 43px;
 }
 
 .navbar-nav{
@@ -29,19 +17,220 @@ $color-header:#F5F5F5;
 	text-transform: uppercase;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:visited {
     color:black;
     font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav>li:hover, .navbar-inverse .navbar-nav>.active {
+    border-bottom: 3px solid black;
+}
+
+.navbar-nav {
+    display: table;
+    float: none;
+    margin: 0 auto;
+    table-layout: fixed;
+    font-size: 1.25em;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: black;
     background-color: transparent;
+    font-weight:bold;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+
+.img-wrapper{
+	padding:0;
+}
+
+.work-team{
+	
+
 }
 
 /* ESTILOS PROPIOS*/
+$fuente-titulos:"Roboto slab";
+
+
+.titulos{
+	h2{
+		text-transform: uppercase;
+		font-family: $fuente-titulos;
+		text-align:center;
+		padding:15px 0;
+	}
+}
 
 header{
 	text-align: center;;
 	background:$color-header ;
+	box-shadow: inset 0 0 64px rgba(0, 0, 0, 0.5);
+}
+
+section{
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.nosotros{
+	@extend .titulos;
+	p{
+		
+	}
+	.img-nosotros{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+	
+.row-logo{
+	padding-top: 51px;
+	padding-bottom: 27px;
+}
+
+
+.portfolio{
+	@extend .titulos;
+	background:black;
+	h2{
+		color:whitesmoke;
+	}
+	img{
+		width: 100%;
+	}
+}
+
+.work-team{
+	@extend .titulos;
+	
+}
+
+.text-work{
+		padding:25px;
+}
+
+
+.contact {
+	@extend .titulos;
+    border-top: 2px solid rgba(204,204,204,0.4);
+    background-image: url("../imagenes/map.png");    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    background-color: black;
+    .mapa{
+        width: 100%;
+        height: 350px;
+        padding-top: 26px;
+    }
+   
+    input, textarea{
+        opacity: 0.95;
+    }
+    h2{
+    	text-align: left;
+    }
+    .form-group {
+    text-align: left; 
+    }
+    #submit{
+        background-color: #498e7c ;
+        border: none;
+    }
+    span{
+        background-color: #498e7c ;
+        i{
+            color: white;
+        }
+    }
+    address{
+    background-color: rgba(153,153,153,0.4);
+    border: 2px solid rgba(153,153,153,1);
+   border-radius: 5px;
+    width: 60%;
+    p{
+    font-weight: bold;
+    }
+    }
+}
+
+footer{
+	@extend .titulos;
+	background:black;
+	h2{
+		color:white;
+	}
+	.links li{
+		list-style:none;
+		&:hover a{
+				color: #907997;
+			}
+		a{
+			color:white;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+	.redes ul{
+		padding-left: 0px;
+		text-align: center;
+		li{
+			margin: 5px;
+			padding: 20px;
+			width:30px;
+			height:30px;
+			border: 1px solid white;
+			border-radius: 50%;
+			display: inline-block;
+			list-style:none;
+			position: relative;
+			&:hover{
+				background: #907997;
+				transition: 0.8s;
+			}
+			a{
+				text-transform: uppercase;
+				color: white;
+				span{
+					font-size: 1.5em;
+					top:50%;
+					left:50%;
+					transform: translate(-50%,-50%);
+					position: absolute;
+				}
+			}
+			
+		}
+
+
+	}
+	
+}
+
+
+
+@media screen and (max-width: 970px){
+	.img-work{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.text-work{
+		text-align: center;
+	}
+
+
+	.links{
+		text-align: center;
+		ul{
+			padding-left: 0px;
+		}
+	}
 }

@@ -9,10 +9,10 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 	<link rel="stylesheet" href="css/stylesheet.css">
+  
 
   </head>
 
@@ -20,20 +20,21 @@
 
     <header>
 
-    <div class="row">
-      <div class="col-xs-12">
-      <img src="imagenes/1.jpg" alt="">
-        
+    <div class="container-fluid">
+      <div class="row row-logo">
+
+        <div class="col-xs-12">
+         <img src="imagenes/1_v2.jpg" alt="">
+          
+        </div>
+
       </div>
       
 
 
     </div>
 
-      <nav class="navbar navbar-inverse">
-
-
-          <div class="container">
+      <nav id="navbar" class="navbar navbar-inverse">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -47,26 +48,268 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-center">
+              <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Quienes somos <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Work Team</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a class="ancla" href="#portfolio">Portfolio</a></li>
+                <li><a class="ancla" href="#work">Work Team</a></li>
+                <li><a class="ancla" href="#contact">Contacto</a></li>
               </ul>
          
               
             </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-
-
-      
-
-
+        </nav>     
 
     </header>
 
+
+        <section id="nosotros" class="nosotros">
+          <div class="container-fluid">
+            <div class="nosotros-wrapper container">
+              <div class="row">
+
+
+                <div class="col-xs-12 col-lg-6">
+                  <div class="image-wrapper">
+                    <img class="img-circle img-responsive img-nosotros" src="imagenes/nosotros.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-lg-6">
+                  <div class="image-wrapper">
+                    <h2>Quienes somos</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit temporibus provident molestias laudantium ipsum sunt consequuntur, quas cumque hic magni eveniet! Placeat commodi odio, ducimus nihil minus harum, sequi minima?
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, molestias qui tenetur reprehenderit omnis quasi minima blanditiis consequuntur facilis voluptas voluptates animi quod hic distinctio quisquam quaerat, modi placeat veritatis?
+                    <br>
+                    </p>
+
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>  
+
+
+        </section>
+
+
+        <section id="portfolio" class="portfolio container-fluid">
+            <h2>Portfolio</h2>
+
+            <div class="row">
+              <div class="img-wrapper col-xs-12 col-sm-4 col-md-3 col-lg-3">
+
+                <a href="#">
+                  <img class="img-responsive" src="imagenes/p1.jpg" alt="...">
+                </a>
+              </div>
+
+              <div class="img-wrapper col-xs-12 col-sm-4 col-md-3 col-lg-3">
+
+                <a href="#">
+                  <img class="img-responsive" src="imagenes/p2.jpg" alt="...">
+                </a>
+              </div>
+
+              <div class="img-wrapper col-xs-12 col-sm-4 col-md-3 col-lg-3">
+
+                <a href="#">
+                  <img class="img-responsive" src="imagenes/p3.jpg" alt="...">
+                </a>
+              </div>
+
+
+              <div class="img-wrapper col-xs-12 col-sm-4 col-md-3 col-lg-3">
+
+                <a href="#">
+                  <img class="img-responsive" src="imagenes/p4.jpg" alt="...">
+                </a>
+              </div>
+
+
+              <div class="img-wrapper col-xs-12 col-sm-4 col-md-3 col-lg-3">
+
+                <a href="#">
+                  <img class="img-responsive" src="imagenes/p5.jpg" alt="...">
+                </a>
+              </div>
+
+
+              <div class="img-wrapper col-xs-12 col-sm-4 col-md-3 col-lg-3">
+
+                <a href="#">
+                  <img class="img-responsive" src="imagenes/p6.jpg" alt="...">
+                </a>
+              </div>
+
+              <div class="img-wrapper col-xs-12 col-sm-4 col-md-3 col-lg-3 hidden-sm">
+
+                <a href="#">
+                  <img class="img-responsive" src="imagenes/p7.jpg" alt="...">
+                </a>
+              </div>
+
+              <div class="img-wrapper col-xs-12 col-sm-4 col-md-3 col-lg-3 hidden-sm">
+
+                <a href="#">
+                  <img class="img-responsive" src="imagenes/p8.jpeg" alt="...">
+                </a>
+              </div>
+
+            </div> 
+        </section>
+        
+         <section id="work" class="work-team">
+            <h2>Work Team</h2>
+            <div class="container-fluid">
+              <div class="container">
+                <div class="row">
+                    <div class="text-work col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img class="img-circle img-responsive img-work" src="http://placehold.it/150x150" alt="...">
+                            </div>
+                            <div class="col-sm-12 col-md-8 col-lg-8 col-xs-12">
+                              <div class="caption">
+                              <h3>Nombre Apellido</h3>
+                              <p>Trabaja en la empresa desde hace 10 siglos. Su especialidad son los dibujos a color.</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-work col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img class="img-circle img-responsive img-work" src="http://placehold.it/150x150" alt="...">
+                            </div>
+                            <div class="col-sm-12 col-md-8 col-lg-8 col-xs-12">
+                              <div class="caption">
+                              <h3>Nombre Apellido</h3>
+                               <p>Trabaja en la empresa desde hace 10 siglos. Su especialidad son los dibujos a color.</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="text-work col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img class="img-circle img-responsive img-work" src="http://placehold.it/150x150" alt="...">
+                            </div>
+                            <div class="col-sm-12 col-md-8 col-lg-8 col-xs-12">
+                              <div class="caption">
+                              <h3>Nombre Apellido</h3>
+                              <p>Trabaja en la empresa desde hace 10 siglos. Su especialidad son los dibujos a color.</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-work col-sm-6 col-md-6 col-lg-6 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+                                <img class="img-circle img-responsive img-work" src="http://placehold.it/150x150" alt="...">
+                            </div>
+                            <div class="col-sm-12 col-md-8 col-lg-8 col-xs-12">
+                              <div class="caption">
+                              <h3>Nombre Apellido</h3>
+                              <p>Trabaja en la empresa desde hace 10 siglos. Su especialidad son los dibujos a color.</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+         
+        <div class="container">
+        <h2>Contactanos</h2>
+        <div class="row">
+         
+         <form role="form" action="" method="post" >
+           <div class="col-lg-6 col-xs-12">
+             <div class="form-group">
+               <label for="InputName">Nombre</label>
+               <div class="input-group">
+                 <input type="text" class="form-control opacity" name="InputName" id="InputName" placeholder="Nombre" required>
+                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span></div>
+             </div>
+             <div class="form-group">
+               <label for="InputEmail">Email</label>
+               <div class="input-group">
+                 <input type="email" class="form-control opacity" id="InputEmail" name="InputEmail" placeholder="Email" required  >
+                 <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span></div>
+             </div>
+             <div class="form-group">
+               <label for="InputEmail">Asunto</label>
+               <div class="input-group">
+                 <input type="email" class="form-control opacity" id="InputAsunto" name="InputEmail" placeholder="Asunto" required  >
+                 <span class="input-group-addon"><i class="glyphicon glyphicon-bookmark"></i></span></div>
+             </div>
+             <div class="form-group">
+               <label for="InputMessage">Mensaje</label>
+               <div class="input-group">
+                 <textarea name="InputMessage" id="InputMessage" class="form-control opacity" rows="5" required></textarea>
+                 <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span></div>
+             </div>
+             <input type="submit" name="submit" id="submit" value="Enviar" class="btn btn-info pull-right">
+           </div>
+         </form> 
+         <div class="col-lg-6 col-xs-12">
+         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.68610319234!2d-64.17746668511462!3d-31.422773403704678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2971222637b%3A0xe981317ad406c172!2sTerminal+de+%C3%93mnibus+de+C%C3%B3rdoba%2C+C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1469902704860" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        </div>
+
+         </section>
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h2>Accesos</h2>
+                    <div class="links">
+                        <ul>
+                            <li>
+                              <a href="">Quienes somos</a>
+                            </li>
+                            <li>
+                              <a href="">Portfolio</a>
+                            </li>
+                            <li>
+                              <a href="">Work Team</a>
+                            </li>
+                            <li>
+                              <a href="">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <h2>Redes sociales</h2>
+                    <div class="redes">
+                        <ul>
+                            <li>
+                                <a href=""><span class="ion-social-facebook"></span></a>
+                            </li>
+                            <li>
+                                <a href=""><span class="ion-social-twitter"></span></a>
+                            </li>
+                            <li>
+                                <a href=""><span class="ion-social-linkedin"></span></a>
+                            </li>
+                            <li>
+                                <a href=""><span class="ion-social-pinterest"></span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+        </footer>
 
 	
   
@@ -91,12 +334,29 @@
 
 
 
- 
+    
   
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/stickyMojo.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {    
+
+     $('#sidebar').stickyMojo({footerID: '#footer', contentID: '#content'});
+
+     $('.ancla').click(function(){
+         var link = $(this);
+         var anchor  = link.attr('href');
+         $('html, body').stop().animate({
+             scrollTop: jQuery(anchor).offset().top
+         }, 1500);
+         return false;
+     });
+  });
+  </script>
   </body>
 
 

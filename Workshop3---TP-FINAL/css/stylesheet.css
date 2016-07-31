@@ -11,7 +11,7 @@
 .navbar-inverse .navbar-nav {
   text-transform: uppercase; }
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:visited {
+.navbar-inverse .navbar-nav > li > a:hover {
   color: black;
   font-weight: 700; }
 
@@ -33,42 +33,19 @@
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #000; }
 
-.img-wrapper {
-  padding: 0; }
-
 /* ESTILOS PROPIOS*/
-.titulos h2, .nosotros h2, .portfolio h2, .work-team h2, .contact h2, footer h2 {
+.titulos h2, .nosotros h2, .contact h2 h2 {
   text-transform: uppercase;
-  font-family: "Roboto slab";
-  text-align: center;
-  padding: 15px 0; }
+  font-family: "Roboto slab"; }
 
 header {
   text-align: center;
   background: #F5F5F5;
   box-shadow: inset 0 0 64px rgba(0, 0, 0, 0.5); }
 
-section {
-  padding-top: 40px;
-  padding-bottom: 40px; }
-
-.nosotros .img-nosotros {
-  margin-left: auto;
-  margin-right: auto; }
-
 .row-logo {
   padding-top: 51px;
   padding-bottom: 27px; }
-
-.portfolio {
-  background: black; }
-  .portfolio h2 {
-    color: whitesmoke; }
-  .portfolio img {
-    width: 100%; }
-
-.text-work {
-  padding: 25px; }
 
 .contact {
   border-top: 2px solid rgba(204, 204, 204, 0.4);
@@ -82,10 +59,11 @@ section {
     width: 100%;
     height: 350px;
     padding-top: 26px; }
+  .contact h2 {
+    color: white;
+    text-align: center; }
   .contact input, .contact textarea {
     opacity: 0.95; }
-  .contact h2 {
-    text-align: left; }
   .contact .form-group {
     text-align: left; }
   .contact #submit {
@@ -102,56 +80,5 @@ section {
     width: 60%; }
     .contact address p {
       font-weight: bold; }
-
-footer {
-  background: black; }
-  footer h2 {
-    color: white; }
-  footer .links li {
-    list-style: none; }
-    footer .links li:hover a {
-      color: #907997; }
-    footer .links li a {
-      color: white;
-      text-transform: uppercase;
-      text-decoration: none; }
-  footer .redes ul {
-    padding-left: 0px;
-    text-align: center; }
-    footer .redes ul li {
-      margin: 5px;
-      padding: 20px;
-      width: 30px;
-      height: 30px;
-      border: 1px solid white;
-      border-radius: 50%;
-      display: inline-block;
-      list-style: none;
-      position: relative; }
-      footer .redes ul li:hover {
-        background: #907997;
-        transition: 0.8s; }
-      footer .redes ul li a {
-        text-transform: uppercase;
-        color: white; }
-        footer .redes ul li a span {
-          font-size: 1.5em;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          position: absolute; }
-
-@media screen and (max-width: 970px) {
-  .img-work {
-    margin-left: auto;
-    margin-right: auto; }
-
-  .text-work {
-    text-align: center; }
-
-  .links {
-    text-align: center; }
-    .links ul {
-      padding-left: 0px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
