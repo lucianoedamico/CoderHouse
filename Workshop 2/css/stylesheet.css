@@ -8,7 +8,7 @@ Twitter: @rich_clark
 @import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
 @import "https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Karla|Source+Sans+Pro";
 html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, .contenedor .colections .special div h3, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
@@ -91,21 +91,51 @@ input, select {
 body {
   font-size: 15px; }
 
+@media screen and (min-width: 900px) {
+  .contenedor2 {
+    width: 80%;
+    float: right; } }
+
 .contenedor {
-  max-width: 95%;
+  overflow: auto;
+  max-width: 92%;
   margin: 0 auto; }
+  .contenedor .sidebar {
+    display: none; }
+    @media screen and (min-width: 900px) {
+      .contenedor .sidebar {
+        display: inline-block;
+        width: 20%;
+        font-family: "Karla", sans-serif;
+        font-size: 0.9em; }
+        .contenedor .sidebar h3 {
+          padding: 40px 30px 0 30px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #DFDDD7;
+          font-weight: 400;
+          font-size: 1.1em; }
+        .contenedor .sidebar .side-titulos {
+          padding: 15px; }
+          .contenedor .sidebar .side-titulos .cat {
+            color: #7EB6DE;
+            font-weight: 700; }
+            .contenedor .sidebar .side-titulos .cat li {
+              color: #3B4859;
+              padding: 10px;
+              font-weight: 400; } }
   .contenedor header {
     border-bottom: 1px solid #C9BEBE; }
     .contenedor header .header-principal .logocont {
       padding: 15px;
       margin: 0 auto;
-      max-width: 45%;
+      width: 50%;
+      max-width: 150px;
       height: 45%; }
-      .contenedor header .header-principal .logocont h1 p {
-        display: none; }
-      .contenedor header .header-principal .logocont h1 img {
+      .contenedor header .header-principal .logocont img {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        text-align: center; }
     .contenedor header .header-principal span {
       display: none; }
     .contenedor header .header-principal .header-list {
@@ -114,15 +144,29 @@ body {
       display: none; }
   .contenedor .nav-desktop {
     display: none; }
+    @media screen and (min-width: 900px) {
+      .contenedor .nav-desktop {
+        display: block;
+        text-align: center; }
+        .contenedor .nav-desktop ul li {
+          display: inline-block;
+          color: #3B4859;
+          font-family: "Karla", sans-serif;
+          font-size: 0.8em; } }
   .contenedor .nav-mobile {
     text-align: center; }
+    @media screen and (min-width: 900px) {
+      .contenedor .nav-mobile {
+        display: none; } }
     .contenedor .nav-mobile .nav-mobile-list {
       padding-bottom: 10px; }
       .contenedor .nav-mobile .nav-mobile-list li {
         display: inline-block;
         padding: 20px; }
         .contenedor .nav-mobile .nav-mobile-list li span {
-          font-size: 30px; }
+          font-size: 2em; }
+          .contenedor .nav-mobile .nav-mobile-list li span:hover {
+            color: #774177; }
   .contenedor .imagenes .imagenes-wrapper {
     margin-top: 30px; }
     .contenedor .imagenes .imagenes-wrapper .estilos {
@@ -148,6 +192,14 @@ body {
           font-weight: 400;
           letter-spacing: 2px;
           font-size: 0.9em; }
+      @media screen and (min-width: 900px) {
+        .contenedor .imagenes .imagenes-wrapper .estilos {
+          width: 50%;
+          display: inline-block;
+          padding: 10px;
+          box-sizing: border-box; }
+          .contenedor .imagenes .imagenes-wrapper .estilos:nth-child(2) {
+            float: left; } }
       .contenedor .imagenes .imagenes-wrapper .estilos.autumn .imag-text {
         padding: 15px;
         position: static;
@@ -155,6 +207,25 @@ body {
         color: black; }
         .contenedor .imagenes .imagenes-wrapper .estilos.autumn .imag-text h2 {
           padding: 10px; }
+      @media screen and (min-width: 900px) {
+        .contenedor .imagenes .imagenes-wrapper .estilos.autumn {
+          width: 100%;
+          position: relative; }
+          .contenedor .imagenes .imagenes-wrapper .estilos.autumn .imag-text {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(0%, -50%); }
+            .contenedor .imagenes .imagenes-wrapper .estilos.autumn .imag-text h2 {
+              padding: 20px 0;
+              text-align: left;
+              font-size: 2.5em;
+              color: white;
+              text-shadow: 1px 0px 8px rgba(0, 11, 0, 0.5); }
+            .contenedor .imagenes .imagenes-wrapper .estilos.autumn .imag-text h3 {
+              text-align: left;
+              color: white;
+              text-shadow: 1px 0px 8px rgba(0, 11, 0, 0.5); } }
   .contenedor .products {
     padding: 20px; }
     .contenedor .products h3 {
@@ -171,29 +242,50 @@ body {
           width: 100%; }
         .contenedor .products .anteojos-list li article h4 {
           text-transform: uppercase;
-          color: blue;
+          color: #7EB6DE;
           font-family: "Source Sans Pro", sans-serif; }
         .contenedor .products .anteojos-list li article h5 {
           color: black;
           padding: 13px 0; }
-        .contenedor .products .anteojos-list li article p {
+        .contenedor .products .anteojos-list li article p, .contenedor .products .anteojos-list li article .colections .special div h3, .contenedor .colections .special div .products .anteojos-list li article h3 {
           font-family: "Source Sans Pro", sans-serif;
-          color: gray; }
+          color: gray;
+          font-size: 0.9em; }
+    @media screen and (min-width: 900px) {
+      .contenedor .products .anteojos-list li {
+        width: 24%;
+        display: inline-block;
+        padding: 10px;
+        box-sizing: border-box; } }
   .contenedor .description {
     padding: 20px; }
     .contenedor .description .article-description h2 {
       padding-bottom: 25px;
       font-size: 1.4em; }
-    .contenedor .description .article-description p {
+    .contenedor .description .article-description p, .contenedor .description .article-description .colections .special div h3, .contenedor .colections .special div .description .article-description h3 {
       color: gray;
       font-family: "Source Sans Pro", sans-serif;
-      line-height: 20px; }
-    .contenedor .description .article-description div {
+      line-height: 20px;
+      font-size: 0.9em; }
+    .contenedor .description div {
       width: 100%; }
-      .contenedor .description .article-description div img {
+      .contenedor .description div img {
         width: 100%;
         height: 100%;
-        padding: 20px; }
+        padding: 20px 0; }
+    @media screen and (min-width: 900px) {
+      .contenedor .description .article-description {
+        width: 50%;
+        display: inline-block; }
+        .contenedor .description .article-description h2, .contenedor .description .article-description p, .contenedor .description .article-description .colections .special div h3, .contenedor .colections .special div .description .article-description h3 {
+          display: inline-block;
+          font-size: 0.9em; }
+      .contenedor .description div {
+        float: right;
+        width: 49%; }
+        .contenedor .description div img {
+          padding: 20px;
+          max-width: 320px; } }
   .contenedor .ofertas {
     padding: 20px; }
     .contenedor .ofertas .div-img {
@@ -211,12 +303,18 @@ body {
         font-family: "Crimson Text", serif;
         letter-spacing: 3px; }
         .contenedor .ofertas .div-img .ofertas-text h3 {
-          padding: 55px 0;
+          padding: 25px 0;
           font-size: 2.5em;
           text-transform: none;
           letter-spacing: none; }
   .contenedor .news {
     padding: 20px; }
+    .contenedor .news h4 {
+      color: gray;
+      font-family: "Crimson Text", serif;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 20px 0; }
     .contenedor .news li {
       list-style: none; }
     .contenedor .news .notice {
@@ -224,17 +322,23 @@ body {
       .contenedor .news .notice img {
         padding: 20px 0;
         width: 100%; }
-      .contenedor .news .notice p {
+      .contenedor .news .notice p, .contenedor .news .notice .colections .special div h3, .contenedor .colections .special div .news .notice h3 {
         font-family: "Source Sans Pro", sans-serif;
         color: gray;
-        line-height: 20px; }
+        line-height: 20px;
+        font-size: 0.9em;
+        text-align: left; }
       .contenedor .news .notice a {
-        color: blue;
+        color: #7EB6DE;
         text-decoration: none;
         text-transform: uppercase;
         padding: 20px 0;
         font-family: "Source Sans Pro", sans-serif;
         display: block; }
+    @media screen and (min-width: 900px) {
+      .contenedor .news li {
+        width: 30%;
+        display: inline-block; } }
   .contenedor .colections {
     padding: 20px; }
     .contenedor .colections ul {
@@ -250,7 +354,7 @@ body {
       .contenedor .colections .colection-article img {
         width: 100%;
         padding-top: 20px; }
-      .contenedor .colections .colection-article p {
+      .contenedor .colections .colection-article p, .contenedor .colections .colection-article .special div h3, .contenedor .colections .special div .colection-article h3 {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -258,28 +362,160 @@ body {
         color: white;
         font-size: 22px; }
     .contenedor .colections .special {
-      background-color: #A09393;
-      padding: 80px 0;
-      position: static;
-      text-align: center;
-      color: white;
-      margin: 30px 0;
-      text-transform: uppercase;
-      line-height: 25px; }
-      .contenedor .colections .special.s2 {
-        background-color: #AAA9B8; }
-      .contenedor .colections .special.s3 {
-        background-color: #D5BCBC;
-        padding-bottom: 30px; }
-      .contenedor .colections .special h3 {
-        font-family: "Crimson Text", serif;
-        font-size: 2em; }
-      .contenedor .colections .special p {
-        color: white;
-        font-size: 20px;
-        padding: 20px 0;
-        font-family: "Crimson Text", serif; }
+      position: relative;
+      padding-top: 20px; }
+      .contenedor .colections .special img {
+        width: 100%; }
+      .contenedor .colections .special div {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        .contenedor .colections .special div p, .contenedor .colections .special div h3 {
+          font-family: "Crimson Text", serif;
+          color: white;
+          font-size: 1em;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 1.5px; }
+        .contenedor .colections .special div h3 {
+          padding: 20px;
+          font-size: 1.6em; }
     .contenedor .colections .line {
       margin: 10px 0; }
+    @media screen and (min-width: 900px) {
+      .contenedor .colections ul {
+        border-bottom: none; }
+        .contenedor .colections ul li {
+          padding: 0;
+          width: 32%;
+          display: inline-block; } }
+
+/*FOOTER*/
+li {
+  list-style: none;
+  padding: 10px; }
+
+footer {
+  margin-top: 50px;
+  font-family: "Crimson Text", serif;
+  font-size: 1.1em;
+  text-align: center; }
+  footer .shopp, footer .support {
+    padding: 20px; }
+    footer .shopp h3, footer .support h3 {
+      font-weight: bold; }
+  footer .navigate, footer .social {
+    border-top: 1px solid #cdcdcd;
+    padding: 15px; }
+    footer .navigate h3, footer .social h3 {
+      @expand .shopp h3; }
+  footer .twitter span {
+    color: #7EB6DE; }
+  footer .twitter p, footer .twitter .contenedor .colections .special div h3, .contenedor .colections .special div footer .twitter h3 {
+    padding-bottom: 10px;
+    color: gray; }
+  footer .social {
+    padding: 30px; }
+    footer .social input {
+      width: 70%;
+      margin: 15px 0;
+      border-radius: 5px;
+      border: 1px solid #cdcdcd;
+      padding: 8px; }
+    footer .social .redes {
+      padding: 15px; }
+      footer .social .redes h3 {
+        padding: 10px; }
+      footer .social .redes span {
+        font-size: 2em;
+        color: #3B4859;
+        padding: 10px; }
+  @media screen and (min-width: 900px) {
+    footer {
+      width: 100%;
+      margin: 30px;
+      padding: 20px 0 80px 0;
+      border-top: 0.4px solid #D2CFCF;
+      border-bottom: 0.4px solid #D2CFCF;
+      font-family: "Source Sans Pro", sans-serif;
+      color: gray;
+      font-size: 0.85em;
+      text-align: left; }
+      footer .shopp, footer .support {
+        display: none; }
+      footer .navigate, footer .social {
+        color: #3B4859;
+        border: none;
+        display: inline-block;
+        width: 20%;
+        float: left;
+        padding: 0; }
+        footer .navigate h3, footer .social h3 {
+          text-transform: uppercase;
+          color: black;
+          padding: 10px;
+          letter-spacing: 1px; }
+      footer .support {
+        display: inline-block;
+        width: 20%;
+        float: left;
+        padding: 0;
+        color: #3B4859; }
+        footer .support h3 {
+          text-transform: uppercase;
+          color: black;
+          padding: 10px;
+          letter-spacing: 1px; }
+      footer .twitter {
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        float: left;
+        padding: 0; }
+        footer .twitter h3 {
+          text-transform: uppercase;
+          color: black;
+          padding: 10px;
+          letter-spacing: 1px; }
+        footer .twitter .pix1, footer .twitter .pix2 {
+          display: inline-block;
+          width: 50%;
+          position: absolute;
+          top: 30%;
+          left: 30%;
+          font-size: 1.5em;
+          font-weight: bold; }
+        footer .twitter .pix2 {
+          top: 45%;
+          font-size: 1.1em;
+          font-weight: 400; }
+        footer .twitter .pix3 {
+          padding: 10px 0; }
+        footer .twitter .pix4 {
+          padding: 5px 0; }
+          footer .twitter .pix4 a {
+            color: #7EB6DE;
+            text-decoration: none; }
+      footer .social {
+        display: inline-block;
+        width: 30%;
+        float: left;
+        padding: 0; }
+        footer .social h3 {
+          text-transform: uppercase;
+          color: black;
+          padding: 10px;
+          letter-spacing: 1px; }
+        footer .social input {
+          width: 80%;
+          color: #3B4859; } }
+
+.pix6 {
+  color: #DFDDD7;
+  font-size: 0.9em;
+  padding: 10px 0 30px 0;
+  font-family: "Karla", sans-serif; }
 
 /*# sourceMappingURL=stylesheet.css.map */
